@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
@@ -30,35 +31,36 @@
         </menus>
       </MenuBar>
       <Text layoutX="945.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SideWalk" />
-      <Button layoutX="61.0" layoutY="68.0" mnemonicParsing="false" prefHeight="210.0" prefWidth="226.0" text="My Class">
+      <Button fx:id="myClassButton" layoutX="61.0" layoutY="68.0" mnemonicParsing="false" onAction="#openMyClass" prefHeight="210.0" prefWidth="226.0" text="My Class">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="61.0" layoutY="335.0" mnemonicParsing="false" prefHeight="210.0" prefWidth="226.0" text="Attendance">
+      <Button fx:id="attendanceLogButton" layoutX="61.0" layoutY="335.0" mnemonicParsing="false" onAction="#openAttendanceLog" prefHeight="210.0" prefWidth="226.0" text="Attendance">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="387.0" layoutY="68.0" mnemonicParsing="false" prefHeight="210.0" prefWidth="226.0" text="Gradebook">
+      <Button fx:id="gradebookButton" layoutX="387.0" layoutY="68.0" mnemonicParsing="false" onAction="#openGradebook" prefHeight="210.0" prefWidth="226.0" text="Gradebook">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="387.0" layoutY="335.0" mnemonicParsing="false" prefHeight="210.0" prefWidth="226.0" text="Behavior">
+      <Button fx:id="behaviorLogButton" layoutX="387.0" layoutY="335.0" mnemonicParsing="false" onAction="#openBehaviorLog" prefHeight="210.0" prefWidth="226.0" text="Behavior">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="719.0" layoutY="68.0" mnemonicParsing="false" prefHeight="210.0" prefWidth="226.0" text="My Info">
+      <Button fx:id="myInfoButton" layoutX="719.0" layoutY="68.0" mnemonicParsing="false" onAction="#openMyInfo" prefHeight="210.0" prefWidth="226.0" text="My Info">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="719.0" layoutY="335.0" mnemonicParsing="false" prefHeight="210.0" prefWidth="226.0" text="Seating Chart">
+      <Button fx:id="seatingChartButton" layoutX="719.0" layoutY="335.0" mnemonicParsing="false" onAction="#openSeatingChart" prefHeight="210.0" prefWidth="226.0" text="Seating Chart">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
+      <Label fx:id="testLabel" layoutX="160.0" layoutY="282.0" />
    </children>
 </AnchorPane>
