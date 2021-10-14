@@ -5,13 +5,27 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tagui.Controller">
    <children>
       <TextField fx:id="userLogin" layoutX="225.0" layoutY="170.0" promptText="User" />
       <PasswordField fx:id="pwdLogin" layoutX="225.0" layoutY="200.0" promptText="Password" />
       <Label fx:id="tfMessage" layoutX="239.0" layoutY="142.0" text="Enter login information" />
-      <Button fx:id="loginButton" layoutX="278.0" layoutY="238.0" mnemonicParsing="false" onAction="#click" text="Enter" />
+      <Button fx:id="loginButton" layoutX="278.0" layoutY="238.0" mnemonicParsing="false" onAction="#showHomePage" text="Login" />
       <Label fx:id="tfOutput" layoutX="297.0" layoutY="273.0" prefHeight="27.0" />
+      <Text layoutX="209.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to SideWalk!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="194.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your own virtual teacher assistant.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="237.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?" />
+      <Button fx:id="createButton" layoutX="251.0" layoutY="358.0" mnemonicParsing="false" onAction="#createAccount" style="-fx-background-color: none; -fx-text-fill: blue;" text="Create Account" textAlignment="CENTER" underline="true" />
    </children>
 </AnchorPane>
