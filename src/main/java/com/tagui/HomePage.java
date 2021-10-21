@@ -1,5 +1,6 @@
 package com.tagui;
 
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -7,6 +8,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -14,7 +17,6 @@ import java.util.Objects;
 
 public class HomePage
 {
-    @FXML Label testLabel;
 
     public void openMyClass(ActionEvent event) throws IOException
     {
@@ -73,7 +75,6 @@ public class HomePage
 
         window.setScene(behaviorLogScene);
         window.show();
-
     }
 
     public void openSeatingChart(ActionEvent event) throws IOException
@@ -87,6 +88,5 @@ public class HomePage
         window.show();
 
     }
-
 
 }
