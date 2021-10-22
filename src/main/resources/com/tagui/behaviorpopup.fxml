@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tagui.behaviorPopUpController">
+   <children>
+      <Text layoutX="111.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter the student whose behavior you'd like to record:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfStudentName" layoutX="138.0" layoutY="187.0" prefHeight="25.0" prefWidth="323.0" promptText="Enter student name" />
+      <Button fx:id="enterStudent" layoutX="278.0" layoutY="220.0" mnemonicParsing="false" onAction="#enterStudent" text="Enter" />
+   </children>
+</AnchorPane>

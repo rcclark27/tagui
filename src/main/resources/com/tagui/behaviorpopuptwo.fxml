@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tagui.behaviorPopUpTwoController">
+   <children>
+      <Text layoutX="289.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="studentName" layoutX="233.0" layoutY="116.0" style="-fx-text-fill: Blue;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Text layoutX="275.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Behavior">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Button layoutX="223.0" layoutY="211.0" mnemonicParsing="false" text="Infraction" />
+      <Button layoutX="321.0" layoutY="211.0" mnemonicParsing="false" text="Reward" />
+      <Button fx:id="backButton" layoutX="252.0" layoutY="341.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: None; -fx-text-fill: Blue;" text="Take Me Home" underline="true" />
+   </children>
+</AnchorPane>
