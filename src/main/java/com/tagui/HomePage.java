@@ -18,6 +18,11 @@ import java.util.Objects;
 public class HomePage
 {
 
+    public void close(ActionEvent event) throws IOException
+    {
+        System.exit(0);
+    }
+
     public void openMyClass(ActionEvent event) throws IOException
     {
         Parent myClassParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("myclass.fxml")));
