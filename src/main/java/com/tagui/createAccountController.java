@@ -28,7 +28,7 @@ public class createAccountController
 
         Driver myDriver = new com.microsoft.sqlserver.jdbc.SQLServerDriver();
         DriverManager.registerDriver(myDriver);
-        String URL = "jdbc:sqlserver://localhost:49679;databaseName=ta";
+        String URL = "jdbc:sqlserver://192.168.1.29:49679;databaseName=ta";
         String user = "guest";
         String pass = "password";
         Connection conn = DriverManager.getConnection(URL, user, pass);
