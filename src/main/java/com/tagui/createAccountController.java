@@ -11,7 +11,7 @@ public class createAccountController
 {
     @FXML TextField enterEmail, enterPassword, enterFirst, enterLast;
 
-    public void submitClicked(ActionEvent event) throws IOException, ClassNotFoundException, SQLException
+    public void submitClicked(ActionEvent event) throws IOException, ClassNotFoundException
     {
 
         String email = enterEmail.getText();
@@ -26,7 +26,7 @@ public class createAccountController
         newUser.setEmailAddress(email);
         newUser.setUserID(2); // will need to make this better obviously
 
-        Driver myDriver = new com.microsoft.sqlserver.jdbc.SQLServerDriver();
+        /*Driver myDriver = new com.microsoft.sqlserver.jdbc.SQLServerDriver();
         DriverManager.registerDriver(myDriver);
         String URL = "jdbc:sqlserver://localhost:49679;databaseName=ta";
         String user = "guest";
@@ -48,7 +48,7 @@ public class createAccountController
             System.out.println("A new user was created successfully!");
         }
 
-        conn.close();
+        conn.close();*/
 
     }
 
