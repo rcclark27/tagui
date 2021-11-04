@@ -26,8 +26,6 @@ public class createAccountController
         newUser.setEmailAddress(email);
         newUser.setUserID(2); // will need to make this better obviously
 
-
-
     }
 
 }
