@@ -1,5 +1,10 @@
 package com.tagui;
 
+
+//"C:\Program Files\sqljdbc_9.4.0.0_enu"
+
+//"C:\Program Files\sqljdbc_9.4.0.0_enu\sqljdbc_9.4\enu\samples\adaptive"
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
