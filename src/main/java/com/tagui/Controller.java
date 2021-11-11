@@ -13,24 +13,22 @@ import javafx.scene.Scene;
 import javafx.scene.Parent;
 import javafx.scene.Node;
 
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Controller
 {
     @FXML Label tfMessage;
     @FXML Label tfOutput;
     @FXML TextField userLogin;
-
-    /*public void click()
-    {
-        String message = userLogin.getText();
-        String output = "Hello " + message;
-        tfOutput.setText(output);
-    }*/
+    @FXML TextField pwdLogin;
 
     public void showHomePage(ActionEvent event) throws IOException
     {
+        // Get rid of this when you get the login thing working
         Parent homeParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("homePage.fxml")));
         Scene homeScene = new Scene(homeParent);
 
@@ -39,6 +37,15 @@ public class Controller
 
         window.setScene(homeScene);
         window.show();
+
+        String user = userLogin.getText();
+        String password = pwdLogin.getText();
+        Boolean correctCredentials = false;
+
+//        fileName = "users.csv";
+//        CSVReader reader = new CSVReader(new FileReader(fileName));
+
+
     }
 
     public void createAccount(ActionEvent event) throws IOException
