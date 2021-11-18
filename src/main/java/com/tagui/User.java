@@ -3,8 +3,7 @@ package com.tagui;
 public class User
 {
 
-    private String firstName;
-    private String lastName;
+    private String name;
     private int userID;
     private String emailAddress;
     private String password;
@@ -14,23 +13,17 @@ public class User
 
     }
 
-    User(String first, String last, int ID, String email, String passwd) // overloaded constructor
+    User(String fullName, int ID, String email, String passwd) // overloaded constructor
     {
-        firstName = first;
-        lastName = last;
+        name = fullName;
         userID = ID;
         emailAddress = email;
         password = passwd;
     }
 
-    public String getFirst()
+    public String getName()
     {
-        return firstName;
-    }
-
-    public String getLast()
-    {
-        return lastName;
+        return name;
     }
 
     public int getUserID()
@@ -48,14 +41,9 @@ public class User
         return password;
     }
 
-    public void setFirst(String first)
+    public void setName(String fullName)
     {
-        firstName = first;
-    }
-
-    public void setLast(String last)
-    {
-        lastName = last;
+        name = fullName;
     }
 
     public void setEmailAddress(String email)

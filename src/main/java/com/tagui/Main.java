@@ -15,7 +15,7 @@ public class Main extends Application
     {
         Parent root = FXMLLoader.load(getClass().getResource("tagui.fxml"));
         stage.setScene(new Scene(root));
-        stage.setTitle("SideWalk Virtual Teacher Assistant");
+        stage.setTitle("SideWalk Teacher Assistant");
         //We can use this to change that default icon in the top left-hand corner by the way
         //stage.getIcons().add(new Image(<yourclassname>.class.getResourceAsStream( "icon.png" )));
         stage.show();

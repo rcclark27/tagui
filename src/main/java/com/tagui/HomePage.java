@@ -75,7 +75,6 @@ public class HomePage extends myClassController implements Initializable
         seat4Teen.setText(names[13]);
         seat5Teen.setText(names[14]);
 
-
         window.show();
 
     }
