@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Popup;
 import javafx.stage.Stage;
 
@@ -91,6 +92,7 @@ public class behaviorLogController
         // loads the classTest.txt file into the scanner for reading
         BufferedReader behaviorScan = new BufferedReader(new FileReader("C:\\Users\\rebec\\IdeaProjects\\dbtest2\\tagui\\src\\main\\resources\\com\\tagui\\classTest.txt"));
         VBox displayedBehavior = new VBox(15); // create a vbox so we can actually display info
+        displayedBehavior.setSpacing(5);
 
         // reads through the classTest.txt file
         while ((line = behaviorScan.readLine()) != null) {
@@ -102,7 +104,9 @@ public class behaviorLogController
             // displays name and behavior of the student if behavior == desiredBehavior
             if (Objects.equals(behavior, desiredBehavior)) {
                 // adds a button to the vbox
-                displayedBehavior.getChildren().add(new Button(student[0]));
+                Button button = new Button(student[0]);
+                button.setBackground(null);
+                displayedBehavior.getChildren().add(button);
                 // System.out.print(System.lineSeparator() + student[0] + ", " + student[2]);
             }
         }
