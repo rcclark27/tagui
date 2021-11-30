@@ -23,7 +23,6 @@ import java.util.Scanner;
 public class myClassController implements Initializable
 {
 
-
     @FXML
     private Button newStuButton;
     @FXML
@@ -430,5 +429,16 @@ public class myClassController implements Initializable
         seat3Teen = seat13;
         seat4Teen = seat14;
         seat5Teen = seat15;
+    }
+
+    public void backButton(ActionEvent event) throws IOException
+    {
+        Parent homePageParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("homePage.fxml")));
+        Scene homePageScene = new Scene(homePageParent);
+
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        window.setScene(homePageScene);
+        window.show();
     }
 }

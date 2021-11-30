@@ -34,7 +34,6 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <CheckBox fx:id="present1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="18.0" style="-fx-alignment: Center;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
@@ -55,7 +54,6 @@
             <CheckBox fx:id="present13" alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="18.0" style="-fx-alignment: Center;" GridPane.columnIndex="1" GridPane.rowIndex="13" />
             <CheckBox fx:id="present14" alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="18.0" style="-fx-alignment: Center;" GridPane.columnIndex="1" GridPane.rowIndex="14" />
             <CheckBox fx:id="present15" alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="18.0" style="-fx-alignment: Center;" GridPane.columnIndex="1" GridPane.rowIndex="15" />
-            <CheckBox fx:id="present16" alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="18.0" style="-fx-alignment: Center;" GridPane.columnIndex="1" GridPane.rowIndex="16" />
             <CheckBox fx:id="absent1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="18.0" style="-fx-alignment: Center;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <CheckBox fx:id="absent2" alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="18.0" style="-fx-alignment: Center;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
             <CheckBox fx:id="absent3" alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="18.0" style="-fx-alignment: Center;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
@@ -71,10 +69,24 @@
             <CheckBox fx:id="absent13" alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="18.0" style="-fx-alignment: Center;" GridPane.columnIndex="2" GridPane.rowIndex="13" />
             <CheckBox fx:id="absent14" alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="18.0" style="-fx-alignment: Center;" GridPane.columnIndex="2" GridPane.rowIndex="14" />
             <CheckBox fx:id="absent15" alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="18.0" style="-fx-alignment: Center;" GridPane.columnIndex="2" GridPane.rowIndex="15" />
-            <CheckBox fx:id="absent16" alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="18.0" style="-fx-alignment: Center;" GridPane.columnIndex="2" GridPane.rowIndex="16" />
+            <Label fx:id="student1" text="Label" GridPane.rowIndex="1" />
+            <Label fx:id="student2" text="Label" GridPane.rowIndex="2" />
+            <Label fx:id="student3" text="Label" GridPane.rowIndex="3" />
+            <Label fx:id="student4" text="Label" GridPane.rowIndex="4" />
+            <Label fx:id="student5" text="Label" GridPane.rowIndex="5" />
+            <Label fx:id="student6" text="Label" GridPane.rowIndex="6" />
+            <Label fx:id="student7" text="Label" GridPane.rowIndex="7" />
+            <Label fx:id="student8" text="Label" GridPane.rowIndex="8" />
+            <Label fx:id="student9" text="Label" GridPane.rowIndex="9" />
+            <Label fx:id="student10" text="Label" GridPane.rowIndex="10" />
+            <Label fx:id="student11" text="Label" GridPane.rowIndex="11" />
+            <Label fx:id="student12" text="Label" GridPane.rowIndex="12" />
+            <Label fx:id="student13" text="Label" GridPane.rowIndex="13" />
+            <Label fx:id="student14" text="Label" GridPane.rowIndex="14" />
+            <Label fx:id="student15" text="Label" GridPane.rowIndex="15" />
          </children>
       </GridPane>
-      <Button fx:id="submitButton" layoutX="276.0" layoutY="375.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: None; -fx-text-fill: blue;" text="Submit" underline="true">
+      <Button fx:id="submitButton" layoutX="276.0" layoutY="375.0" mnemonicParsing="false" onAction="#submit" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: None; -fx-text-fill: blue;" text="Submit" underline="true">
          <font>
             <Font size="10.0" />
          </font>

@@ -2,57 +2,43 @@ package com.tagui;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.HPos;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
+import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
-import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.net.URL;
-import java.util.ResourceBundle;
-import java.util.Scanner;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.io.FileWriter;
 
 public class logAttendanceController implements Initializable
 {
     
     @FXML GridPane gridpane;
     @FXML Label present0, absent0, name0;
-    @FXML CheckBox present1, present2, present3, present4, present5, present6, present7, present8, present9, present10, present11, present12, present13, present14, present15, present16;
-    @FXML CheckBox absent1, absent2, absent3, absent4, absent5, absent6, absent7, absent8, absent9, absent10, absent11, absent12, absent13, absent14, absent15, absent16;
+    @FXML Label student1, student2, student3, student4, student5, student6, student7, student8, student9, student10, student11, student12, student13, student14, student15;
+    @FXML CheckBox present1, present2, present3, present4, present5, present6, present7, present8, present9, present10, present11, present12, present13, present14, present15;
+    @FXML CheckBox absent1, absent2, absent3, absent4, absent5, absent6, absent7, absent8, absent9, absent10, absent11, absent12, absent13, absent14, absent15;
 
     @Override
     public void initialize(URL location, ResourceBundle arg1)
     {
-
-        Label student1 = new Label();
-        Label student2 = new Label();
-        Label student3 = new Label();
-        Label student4 = new Label();
-        Label student5 = new Label();
-        Label student6 = new Label();
-        Label student7 = new Label();
-        Label student8 = new Label();
-        Label student9 = new Label();
-        Label student10 = new Label();
-        Label student11 = new Label();
-        Label student12 = new Label();
-        Label student13 = new Label();
-        Label student14 = new Label();
-        Label student15 = new Label();
 
         String studs[] = new String[15];
         File classText = new File("C:\\Users\\rebec\\IdeaProjects\\dbtest2\\tagui\\src\\main\\resources\\com\\tagui\\classTest.txt");//adds a class csv file
 
         for (int y = 0; y<15; y++)//fills studs array with blank students to prevent null errors
         {
-            studs[y] = "No Student, 0.0, No Behavior, 0, No Attendance/";
+            studs[y] = "No Student,0.0,No Behavior,0,No Attendance\n";
         }
 
         Scanner sc1 = null;
@@ -61,7 +47,7 @@ public class logAttendanceController implements Initializable
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        sc1.useDelimiter("/");
+        sc1.useDelimiter("\n");
         int i = 0;
         while (sc1.hasNext())//fills studs array with students separated with /
         {
@@ -101,22 +87,6 @@ public class logAttendanceController implements Initializable
         student13.setText(names[12]);
         student14.setText(names[13]);
         student15.setText(names[14]);
-
-        gridpane.add(student1,0,1);
-        gridpane.add(student2, 0, 2);
-        gridpane.add(student3, 0, 3);
-        gridpane.add(student4,0,4);
-        gridpane.add(student5, 0, 5);
-        gridpane.add(student6, 0, 6);
-        gridpane.add(student7,0,7);
-        gridpane.add(student8, 0, 8);
-        gridpane.add(student9, 0, 9);
-        gridpane.add(student10,0,10);
-        gridpane.add(student11, 0, 11);
-        gridpane.add(student12, 0, 12);
-        gridpane.add(student13,0,13);
-        gridpane.add(student14, 0, 14);
-        gridpane.add(student15, 0, 15);
 
         GridPane.setHalignment(student1, HPos.CENTER);
         GridPane.setHalignment(student2, HPos.CENTER);
@@ -158,7 +128,6 @@ public class logAttendanceController implements Initializable
         GridPane.setHalignment(present13, HPos.CENTER);
         GridPane.setHalignment(present14, HPos.CENTER);
         GridPane.setHalignment(present15, HPos.CENTER);
-        GridPane.setHalignment(present16, HPos.CENTER);
         GridPane.setHalignment(absent1, HPos.CENTER);
         GridPane.setHalignment(absent2, HPos.CENTER);
         GridPane.setHalignment(absent3, HPos.CENTER);
@@ -174,7 +143,185 @@ public class logAttendanceController implements Initializable
         GridPane.setHalignment(absent13, HPos.CENTER);
         GridPane.setHalignment(absent14, HPos.CENTER);
         GridPane.setHalignment(absent15, HPos.CENTER);
-        GridPane.setHalignment(absent16, HPos.CENTER);
+
+    }
+
+    public void submit(ActionEvent event) throws IOException
+    {
+        FileWriter writer = new FileWriter("C:\\Users\\rebec\\IdeaProjects\\dbtest2\\tagui\\src\\main\\resources\\com\\tagui\\attendancelog.csv", true);
+        writer.append("\n" + getDate() + "\nHere:\n");
+
+        if (present1.isSelected() && !absent1.isSelected())
+        {
+            writer.append(student1.getText() + ",");
+        }
+
+        if (present2.isSelected() && !absent2.isSelected())
+        {
+            writer.append(student2.getText() + ",");
+        }
+
+        if (present3.isSelected() && !absent3.isSelected())
+        {
+            writer.append(student3.getText() + ",");
+        }
+
+        if (present4.isSelected() && !absent4.isSelected())
+        {
+            writer.append(student4.getText() + ",");
+        }
+
+        if (present5.isSelected() && !absent5.isSelected())
+        {
+            writer.append(student5.getText() + ",");
+        }
+
+        if (present6.isSelected() && !absent6.isSelected())
+        {
+            writer.append(student6.getText() + ",");
+        }
+
+        if (present7.isSelected() && !absent7.isSelected())
+        {
+            writer.append(student7.getText() + ",");
+        }
+
+        if (present8.isSelected() && !absent8.isSelected())
+        {
+            writer.append(student8.getText() + ",");
+        }
+
+        if (present9.isSelected() && !absent9.isSelected())
+        {
+            writer.append(student9.getText() + ",");
+        }
+
+        if (present10.isSelected() && !absent10.isSelected())
+        {
+            writer.append(student10.getText() + ",");
+        }
+
+        if (present11.isSelected() && !absent11.isSelected())
+        {
+            writer.append(student11.getText() + ",");
+        }
+
+        if (present12.isSelected() && !absent12.isSelected())
+        {
+            writer.append(student12.getText() + ",");
+        }
+
+        if (present13.isSelected() && !absent13.isSelected())
+        {
+            writer.append(student13.getText() + ",");
+        }
+
+        if (present14.isSelected() && !absent14.isSelected())
+        {
+            writer.append(student14.getText() + ",");
+        }
+
+        if (present15.isSelected() && !absent15.isSelected())
+        {
+            writer.append(student15.getText() + ",");
+        }
+
+        writer.append("\nAbsent:\n");
+
+        if (absent1.isSelected() && !present1.isSelected())
+        {
+            writer.append(student1.getText() + ",");
+        }
+
+        if (absent2.isSelected() && !present2.isSelected())
+        {
+            writer.append(student2.getText() + ",");
+        }
+
+        if (absent3.isSelected() && !present3.isSelected())
+        {
+            writer.append(student3.getText() + ",");
+        }
+
+        if (absent4.isSelected() && !present4.isSelected())
+        {
+            writer.append(student4.getText() + ",");
+        }
+
+        if (absent5.isSelected() && !present5.isSelected())
+        {
+            writer.append(student5.getText() + ",");
+        }
+
+        if (absent6.isSelected() && !present6.isSelected())
+        {
+            writer.append(student6.getText() + ",");
+        }
+
+        if (absent7.isSelected() && !present7.isSelected())
+        {
+            writer.append(student7.getText() + ",");
+        }
+
+        if (absent8.isSelected() && !present8.isSelected())
+        {
+            writer.append(student8.getText() + ",");
+        }
+
+        if (absent9.isSelected() && !present9.isSelected())
+        {
+            writer.append(student9.getText() + ",");
+        }
+
+        if (absent10.isSelected() && !present10.isSelected())
+        {
+            writer.append(student10.getText() + ",");
+        }
+
+        if (absent11.isSelected() && !present11.isSelected())
+        {
+            writer.append(student11.getText() + ",");
+        }
+
+        if (absent12.isSelected() && !present12.isSelected())
+        {
+            writer.append(student12.getText() + ",");
+        }
+
+        if (absent13.isSelected() && !present13.isSelected())
+        {
+            writer.append(student13.getText() + ",");
+        }
+
+        if (absent14.isSelected() && !present14.isSelected())
+        {
+            writer.append(student14.getText() + ",");
+        }
+
+        if (absent15.isSelected() && !present15.isSelected())
+        {
+            writer.append(student15.getText() + ",");
+        }
+
+        // Write an else for an error pop-up if they pick two or don't pick one
+        writer.append("\n");
+        writer.close();
+
+        Parent attendanceLogParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("attendancelog.fxml")));
+        Scene attendanceLogScene = new Scene(attendanceLogParent);
+
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        window.setScene(attendanceLogScene);
+        window.show();
+
+    }
+
+    private String getDate()
+    {
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        df.setTimeZone(TimeZone.getTimeZone("CST"));
+        return (df.format(new Date()));
     }
 
 

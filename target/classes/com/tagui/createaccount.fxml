@@ -2,36 +2,77 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tagui.createAccountController">
-   <children>
-      <Text layoutX="112.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please follow the instructions below to create a new SideWalk Account." />
-      <Button fx:id="loginPageButton" layoutX="499.0" layoutY="360.0" mnemonicParsing="false" onAction="#loginBackButton" style="-fx-background-color: None; -fx-text-fill: Blue;" text="Back to Login" underline="true" />
-      <GridPane layoutX="112.0" layoutY="95.0" prefHeight="168.0" prefWidth="375.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.800048828125" minWidth="10.0" prefWidth="94.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="282.0" minWidth="10.0" prefWidth="282.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <children>
-            <Label text="Enter email:" />
-            <Label text="Enter full name:" GridPane.rowIndex="1" />
-            <Label text="Enter password:" GridPane.rowIndex="2" />
-            <TextField fx:id="enterEmail" GridPane.columnIndex="1" />
-            <TextField fx:id="enterFirst" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="enterPassword" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-         </children>
-      </GridPane>
-      <Button fx:id="submitButton" layoutX="274.0" layoutY="263.0" mnemonicParsing="false" onAction="#submitClicked" text="Submit" />
-   </children>
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tagui.myClassController">
+    <children>
+        <MenuBar layoutX="-1.0" layoutY="-2.0" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="1000.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <GridPane layoutX="14.0" layoutY="28.0" prefHeight="543.0" prefWidth="764.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="seat1" mnemonicParsing="false" onAction="#showStu1" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.rowIndex="0" />
+                <Button fx:id="seat2" mnemonicParsing="false" onAction="#showStu2" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="1" />
+                <Button fx:id="seat3" mnemonicParsing="false" onAction="#showStu3" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="2" />
+                <Button fx:id="seat4" mnemonicParsing="false" onAction="#showStu4" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="3" />
+                <Button fx:id="seat5" mnemonicParsing="false" onAction="#showStu5" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="4" />
+                <Button fx:id="seat6" mnemonicParsing="false" onAction="#showStu6" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.rowIndex="1" />
+                <Button fx:id="seat7" mnemonicParsing="false" onAction="#showStu7" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button fx:id="seat8" mnemonicParsing="false" onAction="#showStu8" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Button fx:id="seat9" mnemonicParsing="false" onAction="#showStu9" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Button fx:id="seat10" mnemonicParsing="false" onAction="#showStu10" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                <Button fx:id="seat11" mnemonicParsing="false" onAction="#showStu11" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.rowIndex="2" />
+                <Button fx:id="seat12" mnemonicParsing="false" onAction="#showStu12" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button fx:id="seat13" mnemonicParsing="false" onAction="#showStu13" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Button fx:id="seat14" mnemonicParsing="false" onAction="#showStu14" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <Button fx:id="seat15" mnemonicParsing="false" onAction="#showStu15" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            </children>
+        </GridPane>
+        <VBox layoutX="797.0" layoutY="108.0" prefHeight="462.0" prefWidth="194.0">
+            <children>
+                <Label fx:id="stuNamLabel" prefHeight="18.0" prefWidth="208.0" text="Name: " />
+                <Label fx:id="stuGpaLabel" prefWidth="208.0" text="GPA:" />
+                <Label fx:id="stuBehLab" layoutX="10.0" layoutY="28.0" prefWidth="208.0" text="Behavior: " />
+                <Label fx:id="stuSeaLabel" layoutX="10.0" layoutY="46.0" prefWidth="208.0" text="Seat: " />
+                <Label fx:id="stuAttLabel" layoutX="10.0" layoutY="64.0" prefWidth="208.0" text="Attendence: " />
+            </children>
+        </VBox>
+        <Button fx:id="newStuButton" layoutX="797.0" layoutY="35.0" mnemonicParsing="false" onAction="#createNewStuClicked" prefHeight="66.0" prefWidth="194.0" text="Create New Student" />
+        <Button fx:id="backButton" layoutX="462.0" layoutY="570.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: None; -fx-text-fill: Blue;" text="Take Me Home" underline="true" />
+    </children>
 </AnchorPane>

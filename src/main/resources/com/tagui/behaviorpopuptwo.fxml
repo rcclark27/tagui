@@ -23,8 +23,8 @@
             <Font size="13.0" />
          </font>
       </Text>
-      <Button layoutX="223.0" layoutY="211.0" mnemonicParsing="false" text="Infraction" />
-      <Button layoutX="321.0" layoutY="211.0" mnemonicParsing="false" text="Reward" />
+      <Button fx:id="infractionButton" layoutX="223.0" layoutY="211.0" mnemonicParsing="false" onAction="#infractionButton" text="Infraction" />
+      <Button fx:id="rewardButton" layoutX="321.0" layoutY="211.0" mnemonicParsing="false" onAction="#rewardButton" text="Reward" />
       <Button fx:id="backButton" layoutX="252.0" layoutY="341.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: None; -fx-text-fill: Blue;" text="Take Me Home" underline="true" />
    </children>
 </AnchorPane>

@@ -17,12 +17,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Scanner;
+import java.util.*;
 
-public class Controller
+public class Controller // eventually put in a loading screen from this controller using a timer
 {
     @FXML Label tfMessage;
     @FXML Label tfOutput;
@@ -42,9 +39,7 @@ public class Controller
         BufferedReader reader = new BufferedReader(new FileReader(file));
 
         String line = null;
-        Scanner scrn = null;
 
-        User usr = null;
         while ((line = reader.readLine()) != null)
         {
 
@@ -69,6 +64,7 @@ public class Controller
 
         if (correctCredentials == true)
         {
+
             // Get rid of this when you get the login thing working
             Parent homeParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("homePage.fxml")));
             Scene homeScene = new Scene(homeParent);
@@ -79,8 +75,8 @@ public class Controller
             window.setScene(homeScene);
             window.show();
         }
-
     }
+
 
     public void createAccount(ActionEvent event) throws IOException
     {
