@@ -31,112 +31,14 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Button fx:id="logAttendanceButton" layoutX="26.0" layoutY="45.0" mnemonicParsing="false" onAction="#logAttendance" prefHeight="124.0" prefWidth="707.0" style="-fx-border-color: Black; -fx-background-color: None;" text="Log Today's Attendance">
+      <Button fx:id="logAttendanceButton" layoutX="26.0" layoutY="45.0" mnemonicParsing="false" onAction="#logAttendance" prefHeight="244.0" prefWidth="950.0" style="-fx-border-color: Black; -fx-background-color: None;" text="Log Today's Attendance">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <VBox fx:id="hereTodayVBox" layoutX="752.0" layoutY="46.0" prefHeight="508.0" prefWidth="224.0" style="-fx-border-color: Black;">
+      <VBox fx:id="hereTodayVBox" layoutX="26.0" layoutY="310.0" prefHeight="244.0" prefWidth="950.0" style="-fx-border-color: Black;">
          <children>
-            <Label prefHeight="60.0" prefWidth="240.0" style="-fx-alignment: center;" text="Who's Here Today">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here1" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here2" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here3" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here4" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here5" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here6" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here7" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here8" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here9" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here10" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here11" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here12" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here13" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here14" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label fx:id="here15" alignment="CENTER" contentDisplay="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-         </children>
-      </VBox>
-      <Button layoutX="26.0" layoutY="192.0" mnemonicParsing="false" prefHeight="124.0" prefWidth="707.0" style="-fx-border-color: Black; -fx-background-color: None;" text="Enter Excused Absences">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <VBox fx:id="perfectAttendance" layoutX="26.0" layoutY="344.0" prefHeight="210.0" prefWidth="340.0" style="-fx-border-color: Black;">
-         <children>
-            <Label prefHeight="36.0" prefWidth="338.0" style="-fx-alignment: center;" text="Perfect Attendance" textFill="#55bd00">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-         </children>
-      </VBox>
-      <VBox fx:id="missingAttendance" layoutX="393.0" layoutY="344.0" prefHeight="210.0" prefWidth="340.0" style="-fx-border-color: Black;">
-         <children>
-            <Label prefHeight="36.0" prefWidth="338.0" style="-fx-alignment: center;" text="Who's Not Been Here!" textFill="#f03333">
+            <Label prefHeight="60.0" prefWidth="962.0" style="-fx-alignment: center;" text="Who's Here Today">
                <font>
                   <Font size="18.0" />
                </font>

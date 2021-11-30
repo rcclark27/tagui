@@ -49,21 +49,28 @@ public class HomePage extends myClassController implements Initializable
         {
             if (line.equals(date))
             {
+                //System.out.println("Line " + line);
                 BufferedReader reader2 = new BufferedReader(new FileReader(file));
                 String line2;
+                String ignoreLine;
                 String[] temp;
                 int size;
+
                 while((line2 = reader2.readLine()) != null)
                 {
-                   // System.out.println(line2);
-                    if(line2.startsWith("Here:"))
-                    {
+                    if (line2.equals(date)) { // dont move
                         line2 = reader2.readLine();
-                        temp = line2.split(",");
-                        size = temp.length;
-                        for(int i = 0; i < size; i++){
-                            values.add(temp[i]);
-                            //System.out.println(temp[i]);
+                        if (line2.startsWith("Here:"))
+                        {
+                            System.out.println("blurg");
+                            line2 = reader2.readLine();
+                            temp = line2.split(",");
+                            size = temp.length;
+                            for (int i = 0; i < size; i++)
+                            {
+                                values.add(temp[i]);
+                                System.out.println(temp[i]);
+                            }
                         }
                     }
                 }
