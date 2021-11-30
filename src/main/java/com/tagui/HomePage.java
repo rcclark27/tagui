@@ -143,7 +143,7 @@ public class HomePage extends myClassController implements Initializable
 
     public void openGradebook(ActionEvent event) throws IOException
     {
-        Parent gradebookParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("gradebook.fxml")));
+        Parent gradebookParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("gradeBookHomePage.fxml")));
         Scene gradebookScene = new Scene(gradebookParent);
 
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tagui.gradeBookController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="178.0">
+         <children>
+            <ListView fx:id="studentSelection" layoutY="-1.0" prefHeight="400.0" prefWidth="186.0">
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </ListView>
+            <Separator layoutY="58.0" prefHeight="3.0" prefWidth="175.0" />
+            <ChoiceBox fx:id="chooseClass" layoutX="5.0" layoutY="32.0" onAction="#showTeacherClasses" prefHeight="26.0" prefWidth="153.0">
+               <padding>
+                  <Insets right="2.0" />
+               </padding></ChoiceBox>
+            <Label layoutX="31.0" layoutY="5.0" prefHeight="26.0" prefWidth="144.0" text="Choose Your Class!">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ScrollPane hbarPolicy="NEVER" layoutX="-1.0" layoutY="61.0" prefHeight="336.0" prefWidth="175.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="486.0" prefWidth="162.0">
+                     <children>
+                        <VBox fx:id="studentVBox" layoutX="6.0" prefHeight="486.0" prefWidth="154.0">
+                           <effect>
+                              <Blend />
+                           </effect>
+                           <children>
+                              <Button id="StudentButton" fx:id="StudentButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student" />
+                              <Button fx:id="student1" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="student2" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="student3" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="student4" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="student5" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="student6" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="student7" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="student8" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="student9" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="student10" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="student11" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="student12" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="student13" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="student14" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="400.0">
+         <children>
+            <ButtonBar layoutX="145.0" layoutY="358.0" prefHeight="40.0" prefWidth="264.0">
+              <buttons>
+                  <Button fx:id="addAssignment" mnemonicParsing="false" onAction="#userAddAssignment" prefHeight="26.0" text="Add Assignment" />
+                <Button mnemonicParsing="false" onAction="#backButton" text="Main Menu" />
+              </buttons>
+            </ButtonBar>
+            <TableView fx:id="assignmentView" layoutX="23.0" layoutY="32.0" prefHeight="320.0" prefWidth="378.0">
+              <columns>
+                <TableColumn fx:id="allAssignments" editable="false" prefWidth="204.79998207092285" resizable="false" text="Assignments" />
+                <TableColumn fx:id="Grades" editable="false" prefWidth="88.800048828125" text="Points" />
+                 <TableColumn fx:id="totalGrade" editable="false" prefWidth="83.99993896484375" text="Total  Points" />
+              </columns>
+            </TableView>
+            <Label fx:id="totalGradeText" layoutX="15.0" layoutY="370.0" text="Total Grade:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalGradeFinalNum" layoutX="103.0" layoutY="370.0" text="0%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
