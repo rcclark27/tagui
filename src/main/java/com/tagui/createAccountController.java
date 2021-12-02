@@ -45,6 +45,14 @@ public class createAccountController
         Controller.userName = name;
         Controller.userPw = password;
 
+        Parent myLoginParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("tagui.fxml")));
+        Scene myLoginScene = new Scene(myLoginParent);
+
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        window.setScene(myLoginScene);
+        window.show();
+
     }
 
     public void loginBackButton(ActionEvent event) throws IOException
