@@ -7,8 +7,55 @@
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
 <AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tagui.myInfoController">
     <children>
+        <VBox layoutX="292.0" layoutY="125.0" prefHeight="349.0" prefWidth="436.0">
+            <children>
+                <Label prefHeight="58.0" prefWidth="250.0" text="E-Mail:">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="emailLabel" prefHeight="58.0" prefWidth="250.0" text="Label">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="58.0" prefWidth="250.0" text="Name:">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="nameLabel" prefHeight="58.0" prefWidth="250.0" text="Label">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="58.0" prefWidth="250.0" text="Password:">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="pwLabel" prefHeight="58.0" prefWidth="250.0" text="Label">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <Label layoutX="461.0" layoutY="66.0" prefHeight="58.0" prefWidth="97.0" text="My Info" textAlignment="CENTER">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="editButt" layoutX="440.0" layoutY="511.0" mnemonicParsing="false" onAction="#editButton" prefHeight="58.0" prefWidth="140.0" text="Edit Info">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
         <MenuBar prefHeight="25.0" prefWidth="1000.0" style="-fx-background-color: #ffe3b0;">
             <menus>
                 <Menu mnemonicParsing="false" text="File">

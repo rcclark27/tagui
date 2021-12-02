@@ -21,6 +21,11 @@ import java.util.*;
 
 public class Controller // eventually put in a loading screen from this controller using a timer
 {
+
+    public static String userEmail;
+    public static String userName;
+    public static String userPw;
+
     @FXML Label tfMessage;
     @FXML Label tfOutput;
     @FXML TextField userLogin;
@@ -40,13 +45,17 @@ public class Controller // eventually put in a loading screen from this controll
 
         String line = null;
 
+        String email = "";
+        String name = "";
+        String password = "";
+
         while ((line = reader.readLine()) != null)
         {
 
             String[] values = line.split(",");
-            String email = values[0];
-            String name = values[1];
-            String password = values[2];
+            email = values[0];
+            name = values[1];
+            password = values[2];
 
 //            System.out.println("Array was created");
 //            System.out.println(values[0]);
@@ -64,6 +73,10 @@ public class Controller // eventually put in a loading screen from this controll
 
         if (correctCredentials == true)
         {
+
+            userEmail = email;
+            userName = name;
+            userPw = password;
 
             // Get rid of this when you get the login thing working
             Parent homeParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("homePage.fxml")));

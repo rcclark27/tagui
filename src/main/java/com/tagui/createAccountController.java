@@ -41,6 +41,10 @@ public class createAccountController
         writer.append("\n" + users);
         writer.close();
 
+        Controller.userEmail = email;
+        Controller.userName = name;
+        Controller.userPw = password;
+
     }
 
     public void loginBackButton(ActionEvent event) throws IOException
