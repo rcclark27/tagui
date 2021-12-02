@@ -1,5 +1,5 @@
 Leo,3.7,green light,1,present
-John,2.3,green light,2,present
+John,2.3,yellow light,2,present
 Tim,3.5,yellow light,3,present
 Sidney,3.4,green light,4,absent
 Ethan,3.6,yellow light,5,absent
@@ -12,4 +12,4 @@ Becca,3.8,green light,11,present
 Meadow,3.2,green light,12,present
 Dorrie,2.7,green light,13,present
 Sofia,3.2,green light,14,present
-No Student, 0.0, No Behavior, 0, No Attendance
+No Student,0.0,No Behavior,0,No Attendance
