@@ -20,6 +20,12 @@ import java.util.Scanner;
 
 public class behaviorLogController
 {
+
+    public void close()
+    {
+        System.exit(0);
+    }
+
     public void logBehavior(ActionEvent event) throws IOException
     {
         Parent popUpParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("behaviorpopup.fxml")));

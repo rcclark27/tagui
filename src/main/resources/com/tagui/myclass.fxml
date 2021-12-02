@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -14,14 +15,17 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tagui.myClassController">
    <children>
-      <MenuBar layoutX="-1.0" layoutY="-2.0" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="1000.0">
+      <MenuBar prefHeight="25.0" prefWidth="1000.0" style="-fx-background-color: #ffe3b0;">
          <menus>
             <Menu mnemonicParsing="false" text="File">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Quit" />
+                  <MenuItem fx:id="close" mnemonicParsing="false" onAction="#close" text="Quit " />
                </items>
             </Menu>
          </menus>
+         <effect>
+            <DropShadow />
+         </effect>
       </MenuBar>
       <Text fx:id="sidewalk" layoutX="945.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SideWalk" />
       <GridPane layoutX="14.0" layoutY="28.0" prefHeight="543.0" prefWidth="764.0">
@@ -38,21 +42,21 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button fx:id="seat1" mnemonicParsing="false" onAction="#showStu1" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8dc6ff;" text="Button" GridPane.rowIndex="0" />
-            <Button fx:id="seat2" mnemonicParsing="false" onAction="#showStu2" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="1" />
-            <Button fx:id="seat3" mnemonicParsing="false" onAction="#showStu3" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8dc6ff;" text="Button" GridPane.columnIndex="2" />
-            <Button fx:id="seat4" mnemonicParsing="false" onAction="#showStu4" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="3" />
-            <Button fx:id="seat5" mnemonicParsing="false" onAction="#showStu5" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8dc6ff;" text="Button" GridPane.columnIndex="4" />
-            <Button fx:id="seat6" mnemonicParsing="false" onAction="#showStu6" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.rowIndex="1" />
-            <Button fx:id="seat7" mnemonicParsing="false" onAction="#showStu7" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8dc6ff;" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button fx:id="seat8" mnemonicParsing="false" onAction="#showStu8" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button fx:id="seat9" mnemonicParsing="false" onAction="#showStu9" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8dc6ff;" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Button fx:id="seat10" mnemonicParsing="false" onAction="#showStu10" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Button fx:id="seat11" mnemonicParsing="false" onAction="#showStu11" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8dc6ff;" text="Button" GridPane.rowIndex="2" />
-            <Button fx:id="seat12" mnemonicParsing="false" onAction="#showStu12" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button fx:id="seat13" mnemonicParsing="false" onAction="#showStu13" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Button fx:id="seat14" mnemonicParsing="false" onAction="#showStu14" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Button fx:id="seat15" mnemonicParsing="false" onAction="#showStu15" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button fx:id="seat1" mnemonicParsing="false" onAction="#showStu1" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #8dc6ff; -fx-border-width: 3;" text="Button" GridPane.rowIndex="0" />
+            <Button fx:id="seat2" mnemonicParsing="false" onAction="#showStu2" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #8dc6ff; -fx-border-width: 3;" text="Button" GridPane.columnIndex="1" />
+            <Button fx:id="seat3" mnemonicParsing="false" onAction="#showStu3" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #8dc6ff; -fx-border-width: 3;" text="Button" GridPane.columnIndex="2" />
+            <Button fx:id="seat4" mnemonicParsing="false" onAction="#showStu4" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #8dc6ff; -fx-border-width: 3;" text="Button" GridPane.columnIndex="3" />
+            <Button fx:id="seat5" mnemonicParsing="false" onAction="#showStu5" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #8dc6ff; -fx-border-width: 3;" text="Button" GridPane.columnIndex="4" />
+            <Button fx:id="seat6" mnemonicParsing="false" onAction="#showStu6" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #8dc6ff; -fx-border-width: 3;" text="Button" GridPane.rowIndex="1" />
+            <Button fx:id="seat7" mnemonicParsing="false" onAction="#showStu7" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #8dc6ff; -fx-border-width: 3;" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="seat8" mnemonicParsing="false" onAction="#showStu8" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #8dc6ff; -fx-border-width: 3;" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="seat9" mnemonicParsing="false" onAction="#showStu9" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #8dc6ff; -fx-border-width: 3;" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="seat10" mnemonicParsing="false" onAction="#showStu10" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #8dc6ff; -fx-border-width: 3;" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button fx:id="seat11" mnemonicParsing="false" onAction="#showStu11" prefHeight="100.0" prefWidth="100.0" style="-fx-border-width: 3; -fx-border-color: #8dc6ff;" text="Button" GridPane.rowIndex="2" />
+            <Button fx:id="seat12" mnemonicParsing="false" onAction="#showStu12" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #8dc6ff; -fx-border-width: 3;" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="seat13" mnemonicParsing="false" onAction="#showStu13" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #8dc6ff; -fx-border-width: 3;" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="seat14" mnemonicParsing="false" onAction="#showStu14" prefHeight="100.0" prefWidth="100.0" style="-fx-border-width: 3; -fx-border-color: #8dc6ff;" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="seat15" mnemonicParsing="false" onAction="#showStu15" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #8dc6ff; -fx-border-width: 3;" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       <VBox layoutX="797.0" layoutY="108.0" prefHeight="462.0" prefWidth="194.0">
@@ -64,7 +68,7 @@
             <Label fx:id="stuAttLabel" layoutX="10.0" layoutY="64.0" prefWidth="208.0" text="Attendence: " />
          </children>
       </VBox>
-      <Button fx:id="newStuButton" layoutX="797.0" layoutY="35.0" mnemonicParsing="false" onAction="#createNewStuClicked" prefHeight="66.0" prefWidth="194.0" text="Create New Student" />
-      <Button fx:id="backButton" layoutX="462.0" layoutY="570.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: None; -fx-text-fill: Blue;" text="Take Me Home" underline="true" />
+      <Button fx:id="newStuButton" layoutX="797.0" layoutY="35.0" mnemonicParsing="false" onAction="#createNewStuClicked" prefHeight="66.0" prefWidth="194.0" style="-fx-border-color: F9B89C; -fx-border-width: 3;" text="Create New Student" />
+      <Button fx:id="backButton" layoutX="462.0" layoutY="570.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: None; -fx-text-fill: #8dc6ff;" text="Take Me Home" underline="true" />
    </children>
 </AnchorPane>

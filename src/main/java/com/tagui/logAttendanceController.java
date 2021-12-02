@@ -29,6 +29,11 @@ public class logAttendanceController implements Initializable
     @FXML CheckBox present1, present2, present3, present4, present5, present6, present7, present8, present9, present10, present11, present12, present13, present14, present15;
     @FXML CheckBox absent1, absent2, absent3, absent4, absent5, absent6, absent7, absent8, absent9, absent10, absent11, absent12, absent13, absent14, absent15;
 
+    public void close()
+    {
+        System.exit(0);
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle arg1)
     {

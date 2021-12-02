@@ -86,6 +86,10 @@ public class myClassController implements Initializable
     public static Button seat4Teen;
     public static Button seat5Teen;
 
+    public void close()
+    {
+        System.exit(0);
+    }
 
     public void createNewStuClicked(ActionEvent event) throws IOException//opens create new student window
     {

@@ -24,6 +24,11 @@ public class attendanceLogController implements Initializable
 
     @FXML VBox hereTodayVBox;
 
+    public void close()
+    {
+        System.exit(0);
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle arg1)
     {

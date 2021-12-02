@@ -3,26 +3,30 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
-
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.text.Text?>
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tagui.logAttendanceController">
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tagui.logAttendanceController">
    <children>
-       <MenuBar layoutX="-1.0" layoutY="-2.0" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="1000.0">
+       <MenuBar prefHeight="25.0" prefWidth="1000.0" style="-fx-background-color: #ffe3b0;">
            <menus>
                <Menu mnemonicParsing="false" text="File">
                    <items>
-                       <MenuItem mnemonicParsing="false" text="Quit" />
+                       <MenuItem fx:id="close" mnemonicParsing="false" onAction="#close" text="Quit " />
                    </items>
                </Menu>
            </menus>
+           <effect>
+               <DropShadow />
+           </effect>
        </MenuBar>
        <Text fx:id="sidewalk" layoutX="945.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SideWalk" />
       <GridPane fx:id="gridpane" alignment="TOP_CENTER" layoutX="41.0" layoutY="34.0" prefHeight="338.0" prefWidth="520.0">
@@ -100,7 +104,7 @@
             <Label fx:id="student15" text="Label" GridPane.rowIndex="15" />
          </children>
       </GridPane>
-      <Button fx:id="submitButton" layoutX="276.0" layoutY="375.0" mnemonicParsing="false" onAction="#submit" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: None; -fx-text-fill: blue;" text="Submit" underline="true">
+      <Button fx:id="submitButton" layoutX="276.0" layoutY="375.0" mnemonicParsing="false" onAction="#submit" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: None; -fx-text-fill: #8dc6ff;" text="Submit" underline="true">
          <font>
             <Font size="10.0" />
          </font>

@@ -12,6 +12,11 @@ import java.util.Objects;
 
 public class myInfoController
 {
+    public void close()
+    {
+        System.exit(0);
+    }
+
     public void backButton(ActionEvent event) throws IOException
     {
         Parent homePageParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("homePage.fxml")));
