@@ -13,7 +13,7 @@
             <Font size="13.0" />
          </font>
       </Text>
-      <Label fx:id="studentName" layoutX="233.0" layoutY="116.0" style="-fx-text-fill: Blue;">
+      <Label fx:id="studentName" layoutX="259.0" layoutY="114.0" style="-fx-text-fill: F9B89C;">
          <font>
             <Font size="24.0" />
          </font>
@@ -25,6 +25,6 @@
       </Text>
       <Button fx:id="infractionButton" layoutX="223.0" layoutY="211.0" mnemonicParsing="false" onAction="#infractionButton" text="Infraction" />
       <Button fx:id="rewardButton" layoutX="321.0" layoutY="211.0" mnemonicParsing="false" onAction="#rewardButton" text="Reward" />
-      <Button fx:id="backButton" layoutX="252.0" layoutY="341.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: None; -fx-text-fill: Blue;" text="Take Me Home" underline="true" />
+      <Button fx:id="backButton" layoutX="252.0" layoutY="341.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: None; -fx-text-fill: #8dc6ff;" text="Back to Behavior Log" underline="true" />
    </children>
 </AnchorPane>

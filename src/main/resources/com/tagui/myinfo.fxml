@@ -68,6 +68,6 @@
                 <DropShadow />
             </effect>
         </MenuBar>
-        <Button fx:id="backButton" layoutX="462.0" layoutY="570.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: None; -fx-text-fill: Blue;" text="Take Me Home" underline="true" />
+        <Button fx:id="backButton" layoutX="462.0" layoutY="570.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: None; -fx-text-fill: #8dc6ff;" text="Take Me Home" underline="true" />
     </children>
 </AnchorPane>
