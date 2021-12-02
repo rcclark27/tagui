@@ -192,12 +192,57 @@ public class HomePage extends myClassController implements Initializable
 
     public void openSeatingChart(ActionEvent event) throws IOException
     {
-        Parent seatingChartParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("seatingchart.fxml")));
-        Scene seatingChartScene = new Scene(seatingChartParent);
-
+        Parent myClassParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("myclass.fxml")));
+        Scene myClassScene = new Scene(myClassParent);
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(myClassScene);
 
-        window.setScene(seatingChartScene);
+        for (int y = 0; y<15; y++)//fills studs array with blank students to prevent null errors
+        {
+            studs[y] = "No Student,0.0,No Behavior,0,No Attendance\n";
+        }
+
+        Scanner sc1 = new Scanner(classText);
+        sc1.useDelimiter("\n");
+        int i = 0;
+        while (sc1.hasNext())//fills studs array with students separated with /
+        {
+            studs[i] = sc1.next();
+            i++;
+        }
+
+        String[] stuInfo = new String[5];
+        String[] names = new String[15];
+        for (int x=0; x<15; x++)//NESTED LOOP ALERT WOOP WOOP
+        {
+            Scanner sc2 = new Scanner(String.valueOf(studs[x]));
+            sc2.useDelimiter(",");//outer loop goes through each student
+
+            for (int c = 0; c < 5; c++)
+            {
+                stuInfo[c] = String.valueOf(sc2.next());//inner loop fills a temp array with ONE student's info
+            }
+
+            names[x] = String.valueOf(stuInfo[0]);//fills with the names of each student or non student
+            sc2.close();
+        }
+        sc1.close();
+        seatOne.setText("Seat 1\n"+names[0]);//sets the buttons to each student's name
+        seatTwo.setText("Seat 2\n"+names[1]);
+        seatThree.setText("Seat 3\n"+names[2]);
+        seatFour.setText("Seat 4\n"+names[3]);
+        seatFive.setText("Seat 5\n"+names[4]);
+        seatSix.setText("Seat 6\n"+names[5]);
+        seatSeven.setText("Seat 7\n"+names[6]);
+        seatEight.setText("Seat 8\n"+names[7]);
+        seatNine.setText("Seat 9\n"+names[8]);
+        seatTen.setText("Seat 10\n"+names[9]);
+        seatEleven.setText("Seat 11\n"+names[10]);
+        seatTwelve.setText("Seat 12\n"+names[11]);
+        seat3Teen.setText("Seat 13\n"+names[12]);
+        seat4Teen.setText("Seat 14\n"+names[13]);
+        seat5Teen.setText("Seat 15\n"+names[14]);
+
         window.show();
 
     }

@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tagui.myClassController">
    <children>
@@ -17,21 +18,12 @@
          <menus>
             <Menu mnemonicParsing="false" text="File">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Close" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Edit">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Delete" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Help">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="About" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
                </items>
             </Menu>
          </menus>
       </MenuBar>
+      <Text fx:id="sidewalk" layoutX="945.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SideWalk" />
       <GridPane layoutX="14.0" layoutY="28.0" prefHeight="543.0" prefWidth="764.0">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -46,17 +38,17 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button fx:id="seat1" mnemonicParsing="false" onAction="#showStu1" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.rowIndex="0" />
+            <Button fx:id="seat1" mnemonicParsing="false" onAction="#showStu1" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8dc6ff;" text="Button" GridPane.rowIndex="0" />
             <Button fx:id="seat2" mnemonicParsing="false" onAction="#showStu2" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="1" />
-            <Button fx:id="seat3" mnemonicParsing="false" onAction="#showStu3" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="2" />
+            <Button fx:id="seat3" mnemonicParsing="false" onAction="#showStu3" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8dc6ff;" text="Button" GridPane.columnIndex="2" />
             <Button fx:id="seat4" mnemonicParsing="false" onAction="#showStu4" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="3" />
-            <Button fx:id="seat5" mnemonicParsing="false" onAction="#showStu5" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="4" />
+            <Button fx:id="seat5" mnemonicParsing="false" onAction="#showStu5" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8dc6ff;" text="Button" GridPane.columnIndex="4" />
             <Button fx:id="seat6" mnemonicParsing="false" onAction="#showStu6" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.rowIndex="1" />
-            <Button fx:id="seat7" mnemonicParsing="false" onAction="#showStu7" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="seat7" mnemonicParsing="false" onAction="#showStu7" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8dc6ff;" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Button fx:id="seat8" mnemonicParsing="false" onAction="#showStu8" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button fx:id="seat9" mnemonicParsing="false" onAction="#showStu9" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="seat9" mnemonicParsing="false" onAction="#showStu9" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8dc6ff;" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="1" />
             <Button fx:id="seat10" mnemonicParsing="false" onAction="#showStu10" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Button fx:id="seat11" mnemonicParsing="false" onAction="#showStu11" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.rowIndex="2" />
+            <Button fx:id="seat11" mnemonicParsing="false" onAction="#showStu11" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8dc6ff;" text="Button" GridPane.rowIndex="2" />
             <Button fx:id="seat12" mnemonicParsing="false" onAction="#showStu12" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Button fx:id="seat13" mnemonicParsing="false" onAction="#showStu13" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="2" />
             <Button fx:id="seat14" mnemonicParsing="false" onAction="#showStu14" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="2" />

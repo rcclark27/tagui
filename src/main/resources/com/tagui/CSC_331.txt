@@ -1,4 +1,4 @@
-Ethan,Assignment1,80,100,Assingment2,32,100,Assignment3,90,100,Assignment4,80,100
+Ethan,Assignment1,80,100,Assingment2,32,100,Assignment3,90,100,Assignment4,80,100,Assignment 5,30,5
 Tom,Assignment1,80,100
 Becca,Assignment1,80,100,Assingment2,32,100,Assignment3,100,100
 James,Assignment1,80,100

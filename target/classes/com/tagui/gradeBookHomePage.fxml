@@ -50,8 +50,8 @@
                               <Blend />
                            </effect>
                            <children>
-                              <Button id="StudentButton" fx:id="StudentButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student" />
-                              <Button fx:id="student1" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                              <Button id="StudentButton" fx:id="StudentButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE" />
+                              <Button fx:id="student1" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE">
                                  <padding>
                                     <Insets top="2.0" />
                                  </padding>
@@ -59,7 +59,7 @@
                                     <Insets top="4.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button fx:id="student2" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                              <Button fx:id="student2" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE">
                                  <padding>
                                     <Insets top="2.0" />
                                  </padding>
@@ -67,7 +67,7 @@
                                     <Insets top="4.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button fx:id="student3" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                              <Button fx:id="student3" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE">
                                  <padding>
                                     <Insets top="2.0" />
                                  </padding>
@@ -75,7 +75,7 @@
                                     <Insets top="4.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button fx:id="student4" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                              <Button fx:id="student4" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE">
                                  <padding>
                                     <Insets top="2.0" />
                                  </padding>
@@ -83,7 +83,7 @@
                                     <Insets top="4.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button fx:id="student5" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                              <Button fx:id="student5" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE">
                                  <padding>
                                     <Insets top="2.0" />
                                  </padding>
@@ -91,7 +91,7 @@
                                     <Insets top="4.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button fx:id="student6" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                              <Button fx:id="student6" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE">
                                  <padding>
                                     <Insets top="2.0" />
                                  </padding>
@@ -99,7 +99,7 @@
                                     <Insets top="4.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button fx:id="student7" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                              <Button fx:id="student7" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE">
                                  <padding>
                                     <Insets top="2.0" />
                                  </padding>
@@ -107,7 +107,7 @@
                                     <Insets top="4.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button fx:id="student8" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                              <Button fx:id="student8" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE">
                                  <padding>
                                     <Insets top="2.0" />
                                  </padding>
@@ -115,7 +115,7 @@
                                     <Insets top="4.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button fx:id="student9" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                              <Button fx:id="student9" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE">
                                  <padding>
                                     <Insets top="2.0" />
                                  </padding>
@@ -123,7 +123,7 @@
                                     <Insets top="4.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button fx:id="student10" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                              <Button fx:id="student10" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE">
                                  <padding>
                                     <Insets top="2.0" />
                                  </padding>
@@ -131,7 +131,7 @@
                                     <Insets top="4.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button fx:id="student11" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                              <Button fx:id="student11" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE">
                                  <padding>
                                     <Insets top="2.0" />
                                  </padding>
@@ -139,7 +139,7 @@
                                     <Insets top="4.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button fx:id="student12" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                              <Button fx:id="student12" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE">
                                  <padding>
                                     <Insets top="2.0" />
                                  </padding>
@@ -147,7 +147,7 @@
                                     <Insets top="4.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button fx:id="student13" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                              <Button fx:id="student13" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE">
                                  <padding>
                                     <Insets top="2.0" />
                                  </padding>
@@ -155,7 +155,7 @@
                                     <Insets top="4.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button fx:id="student14" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" text="Student">
+                              <Button fx:id="student14" mnemonicParsing="false" onAction="#getStudSelection" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #8dc6ff;" text="Student" textFill="WHITE">
                                  <padding>
                                     <Insets top="2.0" />
                                  </padding>
@@ -174,8 +174,8 @@
          <children>
             <ButtonBar layoutX="145.0" layoutY="358.0" prefHeight="40.0" prefWidth="264.0">
               <buttons>
-                  <Button fx:id="addAssignment" mnemonicParsing="false" onAction="#userAddAssignment" prefHeight="26.0" text="Add Assignment" />
-                <Button mnemonicParsing="false" onAction="#backButton" text="Main Menu" />
+                  <Button fx:id="addAssignment" mnemonicParsing="false" onAction="#userAddAssignment" prefHeight="26.0" style="-fx-background-color: F9B89C;" text="Add Assignment" textFill="WHITE" />
+                <Button mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: F9B89C;" text="Main Menu" textFill="WHITE" />
               </buttons>
             </ButtonBar>
             <TableView fx:id="assignmentView" layoutX="23.0" layoutY="32.0" prefHeight="320.0" prefWidth="378.0">

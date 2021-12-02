@@ -5,51 +5,98 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tagui.HomePage">
    <children>
-      <MenuBar prefHeight="25.0" prefWidth="1000.0">
+      <MenuBar prefHeight="25.0" prefWidth="1000.0" style="-fx-background-color: #ffe3b0;">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem fx:id="close" mnemonicParsing="false" onAction="#close" text="Quit" />
+              <MenuItem fx:id="close" mnemonicParsing="false" onAction="#close" text="Quit " />
             </items>
           </Menu>
         </menus>
+         <effect>
+            <DropShadow />
+         </effect>
       </MenuBar>
-      <Text layoutX="945.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SideWalk" />
-      <Button fx:id="myClassButton" layoutX="61.0" layoutY="68.0" mnemonicParsing="false" onAction="#openMyClass" prefHeight="210.0" prefWidth="226.0" text="My Class">
+      <Text fx:id="sidewalk" layoutX="945.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SideWalk" />
+      <Button fx:id="myClassButton" layoutX="61.0" layoutY="68.0" mnemonicParsing="false" onAction="#openMyClass" prefHeight="210.0" prefWidth="226.0" style="-fx-background-color: #8dc6ff;" text="My Class" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.3686274588108063" green="0.3686274588108063" blue="0.3686274588108063" />
+               </color>
+            </DropShadow>
+         </effect>
       </Button>
-      <Button fx:id="attendanceLogButton" layoutX="61.0" layoutY="335.0" mnemonicParsing="false" onAction="#openAttendanceLog" prefHeight="210.0" prefWidth="226.0" text="Attendance">
+      <Button fx:id="attendanceLogButton" layoutX="61.0" layoutY="335.0" mnemonicParsing="false" onAction="#openAttendanceLog" prefHeight="210.0" prefWidth="226.0" style="-fx-background-color: F9B89C;" text="Attendance" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.3686274588108063" green="0.3686274588108063" blue="0.3686274588108063" />
+               </color>
+            </DropShadow>
+         </effect>
       </Button>
-      <Button fx:id="gradebookButton" layoutX="387.0" layoutY="68.0" mnemonicParsing="false" onAction="#openGradebook" prefHeight="210.0" prefWidth="226.0" text="Gradebook">
+      <Button fx:id="gradebookButton" layoutX="387.0" layoutY="68.0" mnemonicParsing="false" onAction="#openGradebook" prefHeight="210.0" prefWidth="226.0" style="-fx-background-color: F9B89C;" text="Gradebook" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.3686274588108063" green="0.3686274588108063" blue="0.3686274588108063" />
+               </color>
+            </DropShadow>
+         </effect>
       </Button>
-      <Button fx:id="behaviorLogButton" layoutX="387.0" layoutY="335.0" mnemonicParsing="false" onAction="#openBehaviorLog" prefHeight="210.0" prefWidth="226.0" text="Behavior">
+      <Button fx:id="behaviorLogButton" layoutX="387.0" layoutY="335.0" mnemonicParsing="false" onAction="#openBehaviorLog" prefHeight="210.0" prefWidth="226.0" style="-fx-background-color: #8dc6ff;" text="Behavior" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.3686274588108063" green="0.3686274588108063" blue="0.3686274588108063" />
+               </color>
+            </DropShadow>
+         </effect>
       </Button>
-      <Button fx:id="myInfoButton" layoutX="719.0" layoutY="68.0" mnemonicParsing="false" onAction="#openMyInfo" prefHeight="210.0" prefWidth="226.0" text="My Info">
+      <Button fx:id="myInfoButton" layoutX="719.0" layoutY="68.0" mnemonicParsing="false" onAction="#openMyInfo" prefHeight="210.0" prefWidth="226.0" style="-fx-background-color: #8dc6ff;" text="My Info" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.3686274588108063" green="0.3686274588108063" blue="0.3686274588108063" />
+               </color>
+            </DropShadow>
+         </effect>
       </Button>
-      <Button fx:id="seatingChartButton" layoutX="719.0" layoutY="335.0" mnemonicParsing="false" onAction="#openSeatingChart" prefHeight="210.0" prefWidth="226.0" text="Seating Chart">
+      <Button fx:id="seatingChartButton" layoutX="719.0" layoutY="335.0" mnemonicParsing="false" onAction="#openSeatingChart" prefHeight="210.0" prefWidth="226.0" style="-fx-background-color: F9B89C;" text="Seating Chart" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.3686274588108063" green="0.3686274588108063" blue="0.3686274588108063" />
+               </color>
+            </DropShadow>
+         </effect>
       </Button>
       <Label fx:id="testLabel" layoutX="160.0" layoutY="282.0" />
    </children>

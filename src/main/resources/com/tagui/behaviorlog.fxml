@@ -5,8 +5,22 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
 <AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tagui.behaviorLogController">
    <children>
+      <MenuBar layoutX="-1.0" layoutY="-2.0" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="1000.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Text fx:id="sidewalk" layoutX="945.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SideWalk" />
       <ImageView fitHeight="250.0" fitWidth="250.0" layoutX="689.0" layoutY="175.0">
          <image>
             <Image url="@RedMonster.png" />

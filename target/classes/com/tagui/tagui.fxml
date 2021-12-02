@@ -13,7 +13,7 @@
       <TextField fx:id="userLogin" layoutX="225.0" layoutY="170.0" promptText="User" />
       <PasswordField fx:id="pwdLogin" layoutX="225.0" layoutY="200.0" promptText="Password" />
       <Label fx:id="tfMessage" layoutX="239.0" layoutY="142.0" text="Enter login information" />
-      <Button fx:id="loginButton" layoutX="278.0" layoutY="238.0" mnemonicParsing="false" onAction="#showHomePage" text="Login" />
+      <Button fx:id="loginButton" layoutX="278.0" layoutY="238.0" mnemonicParsing="false" onAction="#showHomePage" style="-fx-background-color: #8dc6ff;" text="Login" textFill="WHITE" />
       <Label fx:id="tfOutput" layoutX="297.0" layoutY="273.0" prefHeight="27.0" />
       <Text layoutX="209.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to SideWalk!">
          <font>
@@ -26,6 +26,6 @@
          </font>
       </Text>
       <Text layoutX="237.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?" />
-      <Button fx:id="createButton" layoutX="251.0" layoutY="358.0" mnemonicParsing="false" onAction="#createAccount" style="-fx-background-color: none; -fx-text-fill: blue;" text="Create Account" textAlignment="CENTER" underline="true" />
+      <Button fx:id="createButton" layoutX="251.0" layoutY="358.0" mnemonicParsing="false" onAction="#createAccount" style="-fx-background-color: none; -fx-text-fill: #8dc6ff;" text="Create Account" textAlignment="CENTER" underline="true" />
    </children>
 </AnchorPane>
